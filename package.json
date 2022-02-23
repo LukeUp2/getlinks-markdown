@@ -1,15 +1,25 @@
 {
-  "name": "lib-markdown",
+  "name": "getlinks-markdown",
   "version": "1.0.0",
-  "description": "",
+  "description": "Receive a .md file and extract all the links inside him, if you want to test them, you just need add 'validate' after the command to run the code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest index.test.js"
   },
-  "keywords": [],
+  "type": "module",
+  "keywords": ["markdown", "url"],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "node-fetch": "^3.2.0",
+    "ts-jest": "^27.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
   }
 }
